@@ -1,0 +1,47 @@
+<html>
+<head>
+    <link rel="stylesheet" href="estilosNice.css">
+    <link rel="stylesheet" href="estilosCalculadora.css">
+    <h1 id="emmetH1">Calculadora Epica</h1>
+    <span> (escrito con abreviatura Emmet Bv)</span>
+    <br>
+    <div id="container">
+
+        <div id="inputContainer">
+            <input id = "inputField">
+        </div> 
+        <div id="buttonsContainer">
+            <div id="buttonsLeft"> <!--Botones Izquierdos-->
+                <button class="bLeft" onclick="erase()">AC</button>
+                <button class="bLeft" onclick="masomeno()" disabled> NOT</button>
+                <button class="bLeft" onclick="number('%')">%</button>
+                <br>
+                <button class="bLeft" onclick="number(7)">7</button>
+                <button class="bLeft" onclick="number(8)">8</button>
+                <button class="bLeft" onclick="number(9)">9</button>
+                <br>
+                <button class="bLeft" onclick="number(4)">4</button>
+                <button class="bLeft" onclick="number(5)">5</button>
+                <button class="bLeft" onclick="number(6)">6</button>
+                <br>
+                <button class="bLeft" onclick="number(1)">1</button>
+                <button class="bLeft" onclick="number(2)">2</button>
+                <button class="bLeft" onclick="number(3)">3</button>
+                <br>
+                <button class="bLeft zero" onclick="number(0)">0</button>
+                <button class="bLeft" onclick= "number('.')">.</button>
+            </div>
+
+            <div id="buttonsRight"> <!--Botones Derechos-->
+                <button class="bRight" onclick="number('/')">/</button>
+                <button class="bRight" onclick="number('*')">*</button>
+                <button class="bRight" onclick="number('+')">+</button>
+                <button class="bRight" onclick="number('-')">-</button>
+                <button class="bRight sendInput" id = "xd" onclick="calcule()">=</button>
+            </div>
+
+        </div>
+        <script src="funcionesCalculadora.js"></script>
+    </div>
+</body>
+</html>

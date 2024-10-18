@@ -1,0 +1,145 @@
+/*Animaciones porque si lel*/
+@keyframes giroossss {
+
+    0%{
+        transform: rotate(190deg) translateY(8rem) scale(2000%);
+        text-shadow: none;
+        box-shadow: none;
+        filter: drop-shadow(0 0 80px);
+    }
+    56%{
+        transform: translateY(-2rem) rotate(32deg);
+        text-shadow: none;
+        box-shadow: none;
+        filter: drop-shadow(0 0 80px);
+    }
+    72%{
+        transform: translateY(1.2rem) rotate(0deg)  scale(280%);
+        text-shadow: none;
+        box-shadow: none;
+        filter: drop-shadow(0 0 80px);
+    }
+    82%{
+        transform: translateY(-0.6rem);
+        text-shadow: 0 0 20px black;
+    }
+    88%{
+        transform: translateY(0rem);
+        text-shadow: 0 0 20px black;
+    }
+    94%{
+        transform: translateY(-0.4rem);
+        text-shadow: 0 0 20px black;
+    }
+    100%{
+        transform: translateY(0rem);
+        text-shadow: 0 0 32px darkgray;
+    }
+}
+
+/*Cuerpo de la Página*/
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    box-sizing: border-box;
+}
+*{
+    font-family: "SF Pro Text";
+}
+body::selection{
+    background-color: darkorchid;
+}
+/*Título*/
+h1{
+    z-index: 1;
+    font-size: 64px;
+    padding: 2rem; border-radius: 32px;
+    animation: giroossss 0.9s ease-in !important;
+    background-color: rgb(224,224,224);
+    text-shadow: 0 0 32px darkgray;
+    box-shadow: 0 1px 4px black inset;
+    transition: 0.82s;
+}
+/*Contenedor de la calculadora*/
+#container{
+    background-color: #1c1c1c;
+    width: fit-content;
+    height: auto;
+    padding: 0.4rem;
+    border-radius: 24px;
+    font-family: "SF Pro Display" !important;
+}
+
+#title{
+    color: #f0f0f0;
+    font-size: 16px;
+    padding: 0;
+}
+
+#inputField, #inputField:focus{
+    margin: 1.2rem 0.2rem;
+    margin-bottom: 0.8rem;
+    font-size: 15px;
+    color: #f0f0f0;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    opacity: 80%;
+    text-align: right;
+    box-sizing: border-box;
+}
+/*Botones*/
+#container button{
+    margin: 0.2rem;
+    height: 42px;
+    width: 42px;
+    border: none;
+    border-radius: 100px;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0px 2px 24px #000000;
+    box-sizing: border-box;
+    transition: 0.36s ease-in;
+}
+#container button:active{
+    transition: 0.4s;
+}
+.zero{
+    /*Boton cero*/
+    width: 94px !important;
+}
+
+
+#buttonsContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+#buttonsRight{
+    display: flex;
+    flex-direction: column;
+}
+.bLeft{
+    background-color: #d4d4d2;
+}
+.bLeft:active{
+    background-color: #b0b0b0;
+}
+.bRight{
+    background-color: #ff9500;
+    color: #ffffff;
+}
+.bRight:active{
+    color: #ff9500;
+    background-color: #ffffff;
+}
